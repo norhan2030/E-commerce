@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>shopping card| Craete product page</title>
+    <link rel="stylesheet" href="css/createproduct.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">Shopping Cart</a>
+                <nav>
+                    <ul class="links"> 
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                    <ul class="user_info">
+                        <li><a href="" class="user"></a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li class="shoppingcart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge"></span>
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cart.html">Wiew all products</a>
+                            </div>
+                        </li>
+                        <li><a href="" class="logout">LogOut</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="create-product-page">
+        <div class="container">
+            <form action="" id="create-form">
+                <input type="file" id="upload-image-file">
+                <input type="text" placeholder="name of product..." id="product-name">
+                <input type="text" placeholder="description..." id="product-desc">
+                <select name="" id="product-size">
+                    <option value="" hidden>Size</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="x-large">XL</option>
+                    <option value="xx-large">XXL</option>
+                </select>
+                <input type="submit" value="create" id="producgt-create-btn">
+            </form>
+        </div>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/createproduct.js"></script>
+    
+</body>
+</html>  
