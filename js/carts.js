@@ -17,7 +17,7 @@ function drawcartproducts(allproducts=[]){
                 <p>Quantity: ${item.Quantity}</p>
             </div>
             <div class="product-item-actions">
-                <button class="add-to-cart" onclick="Removefromcart(${item.id})">Remove From Cart</button>
+                <button class="add-to-cart btn pb-5" onclick="Removefromcart(${item.id})">Remove From Cart</button>
             </div>
         </div>
         `

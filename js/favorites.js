@@ -17,7 +17,7 @@ function drawfavoritesproducts(allproducts=[]){
                 <p>Quantity: ${item.Quantity}</p>
             </div>
             <div class="product-item-actions">
-                <button class="add-to-cart" onclick="Removefromfavorites(${item.id})">Remove From Favorite</button>
+                <button class="add-to-cart btn pb-5" onclick="Removefromfavorites(${item.id})">Remove From Favorite</button>
             </div>
         </div>
         `

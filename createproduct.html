@@ -9,6 +9,8 @@
     <title>shopping card| Craete product page</title>
     <link rel="stylesheet" href="css/createproduct.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 <body>
    <header>
@@ -17,12 +19,12 @@
                 <a href="index.html" class="brand">Shopping Cart</a>
                 <nav>
                     <ul class="links"> 
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="register.html">Sign Up</a></li>
+                        <li><a class="text-white nav-link" href="login.html">Sign In</a></li>
+                        <li><a class="text-white nav-link" href="register.html">Sign Up</a></li>
                     </ul>
                     <ul class="user_info">
-                        <li><a href="" class="user"></a></li>
-                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="" class="user text-white nav-link"></a></li>
+                        <li><a href="favorites.html" class="text-white nav-link">Favorites</a></li>
                         <li class="shoppingcart">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="badge"></span>
@@ -31,7 +33,7 @@
                                 <a href="cart.html">Wiew all products</a>
                             </div>
                         </li>
-                        <li><a href="" class="logout">LogOut</a></li>
+                        <li><a href="" class="logout text-white nav-link">LogOut</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,11 +41,12 @@
     </header>
     <section class="create-product-page">
         <div class="container">
+            <h2 class="mb-4">Create Product</h2>
             <form action="" id="create-form">
-                <input type="file" id="upload-image-file">
-                <input type="text" placeholder="name of product..." id="product-name">
-                <input type="text" placeholder="description..." id="product-desc">
-                <select name="" id="product-size">
+                <input class="form-control" type="file" id="upload-image-file">
+                <input class="form-control" type="text" placeholder="name of product..." id="product-name">
+                <input class="from-control" type="text" placeholder="description..." id="product-desc">
+                <select name="" id="product-size" class="">
                     <option value="" hidden>Size</option>
                     <option value="small">S</option>
                     <option value="medium">M</option>
@@ -51,7 +54,7 @@
                     <option value="x-large">XL</option>
                     <option value="xx-large">XXL</option>
                 </select>
-                <input type="submit" value="create" id="producgt-create-btn">
+                <input type="submit" value="create" class="btn" id="producgt-create-btn">
             </form>
         </div>
     </section>

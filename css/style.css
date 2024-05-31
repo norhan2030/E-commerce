@@ -164,7 +164,7 @@ nav li a{
     cursor: pointer;
 }
 .product-item .add-to-cart{
-    width: 80px;
+    width: 100%;
     height: 50px;
     background-color: rgb(242, 187, 238);
     color: #fff;

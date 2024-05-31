@@ -8,6 +8,8 @@
     <title>shopping card| login page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 
 </head>
 <body>
@@ -17,8 +19,8 @@
                 <a href="index.html" class="brand">Shopping Cart</a>
                 <nav>
                     <ul>
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="register.html">Sign Up</a></li>
+                        <li><a class="text-white nav-link" href="login.html">Sign In</a></li>
+                        <li><a class="text-white nav-link" href="register.html">Sign Up</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,10 +29,10 @@
     <section class="section-form">
         <h2>Login</h2>
         <form action="">
-            <input class="name" type="text" placeholder="Enter UserName...">
-            <input class="password" type="password" placeholder="Enter Password...">
-            <input class="sgin_in" type="submit" value="Sgin In">
-            Not have account <a href="register.html">Register</a>
+            <input class="name form-control" type="text" placeholder="Enter UserName...">
+            <input class="password form-control mt-2" type="password" placeholder="Enter Password...">
+            <input class="sgin_in btn p-2 my-2" type="submit" value="Sgin In">
+            Not have account <a class="decoration-none" href="register.html"> Register</a>
         </form>
     </section>
     <script src="js/login.js"></script>

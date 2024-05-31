@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>shopping card| Home page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 <body>
    <header>
@@ -15,23 +17,24 @@
             <div class="header-content">
                 <a href="index.html" class="brand">Shopping Cart</a>
                 <nav>
-                    <ul class="links"> 
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="register.html">Sign Up</a></li>
-                    </ul>
-                    <ul class="user_info">
-                        <li><a href="" class="user"></a></li>
-                        <li><a href="favorites.html">Favorites</a></li>
-                        <li><a href="myproduct.html">My Products</a></li>
+                    
+                    <ul class="user_info text-end">
+                        <li><a href="" class="user text-white nav-link"></a></li>
+                        <li><a class="text-white nav-link" href="favorites.html">Favorites</a></li>
+                        <li><a class="text-white nav-link" href="myproduct.html">My Products</a></li>
                         <li class="shoppingcart">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="badge"></span>
-                            <div class="carts-products">
+                            <div class="carts-products rounded">
                                 <div></div>
-                                <a href="cart.html">Wiew all products</a>
+                                <a class="text-white nav-link" href="cart.html">Wiew all products</a>
                             </div>
                         </li>
-                        <li><a href="" class="logout">LogOut</a></li>
+                        <li><a href="" class="logout text-white nav-link">LogOut</a></li>
+                    </ul>
+                    <ul class="links"> 
+                        <li><a class="text-white nav-link" href="login.html">Sign In</a></li>
+                        <li><a class="text-white nav-link" href="register.html">Sign Up</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,12 +42,12 @@
     </header>
     <section class="home">
         <div class="container">
-            <input type="text"id="search" placeholder="search by name">
+            <input class="form-control mt-3" type="search" id="search" placeholder="search by name">
             <div class="products">
                 
             </div>
             <div class="products-filter">
-                <select name="" id="size-filter">
+                <select name="" class="form-select" id="size-filter">
                     <option value="" hidden>Filter By Size</option>
                     <option value="all">ALL</option>
                     <option value="S">S</option>

@@ -94,10 +94,10 @@ function drawproducts(products=[]){
                 <a onclick='saveItemData(${item.id})'>${item.title}</a>
                 <p>${item.desc}</p>
                 <span>${item.size}</span>
-                ${item.isMe==="y"?"<button>Edit</button>":""}
+                ${item.isMe==="y"?"<button class='btn border'>Edit</button>":""}
             </div>
-            <div class="product-item-actions">
-                <button class="add-to-cart" onclick="addTOcart(${item.id})">Add To Cart</button>
+            <div class="product-item-actions text-end ">
+                <button class="add-to-cart btn" onclick="addTOcart(${item.id})">Add To Cart</button>
                 <i class="fa-regular fa-heart" style="color:${item.liked==true ?"red":""}" onclick="addToFavorite(${item.id})"></i>
             </div>
         </div>

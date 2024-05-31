@@ -14,6 +14,7 @@ logout.addEventListener("click",function(){
     setTimeout(()=>{
         window.location="register.html"
     },1500)
+    // document.querySelector(".user_info").style.display="none"
     // setTimeout(()=>{
     //     console.log("3")
     //     window.location="register.html"
